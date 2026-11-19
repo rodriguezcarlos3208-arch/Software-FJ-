@@ -1,0 +1,20 @@
+2026-11-18 22:25:27 | INFO     | Cliente registrado exitosamente: Cliente [C01] Laura Martínez | Doc: 1110456789 | Email: laura.martinez@correo.com
+2026-11-18 22:25:27 | INFO     | Finalizado intento de registro de cliente C01.
+2026-11-18 22:25:27 | INFO     | Cliente registrado exitosamente: Cliente [C02] Carlos Gómez | Doc: 1110987654 | Email: carlos.gomez@empresa.co
+2026-11-18 22:25:27 | INFO     | Finalizado intento de registro de cliente C02.
+2026-11-18 22:25:27 | ERROR    | Fallo al registrar cliente (C03): Formato de correo inválido: 'correo_sin_arroba.com'.
+2026-11-18 22:25:27 | INFO     | Finalizado intento de registro de cliente C03.
+2026-11-18 22:25:27 | ERROR    | Fallo al registrar cliente (C04): Ya existe un cliente registrado con el documento 1110456789.
+2026-11-18 22:25:27 | INFO     | Finalizado intento de registro de cliente C04.
+2026-11-18 22:25:27 | INFO     | Servicio catalogado: Servicio [S01] Sala de Juntas Ejecutiva | Tarifa: $80,000/h | Estado: Disponible
+2026-11-18 22:25:27 | INFO     | Servicio catalogado: Servicio [S02] Workstation Portátil Core i9 | Tarifa: $35,000/h | Estado: Disponible
+2026-11-18 22:25:27 | INFO     | Servicio catalogado: Servicio [S03] Consultoría Arquitectura Cloud | Tarifa: $120,000/h | Estado: Disponible
+2026-11-18 22:25:27 | ERROR    | Fallo al instanciar servicio S04: La tarifa por hora (-50000) debe ser mayor a cero.
+2026-11-18 22:25:27 | INFO     | Reserva confirmada: Reserva [R01] Cliente: Laura Martínez | Servicio: Sala de Juntas Ejecutiva (4h) | Estado: CONFIRMADA | Total: $410,550.00
+2026-11-18 22:25:27 | ERROR    | Fallo en el procesamiento de reserva R02 | Causa raíz: El servicio 'Sala de Juntas Ejecutiva' no está disponible actualmente.
+2026-11-18 22:25:27 | ERROR    | Fallo en el procesamiento de reserva R03 | Causa raíz: El alquiler de equipos requiere un mínimo de 2 horas.
+2026-11-18 22:25:27 | INFO     | Reserva confirmada: Reserva [R04] Cliente: Carlos Gómez | Servicio: Workstation Portátil Core i9 (6h) | Estado: CONFIRMADA | Total: $213,664.50
+2026-11-18 22:25:27 | INFO     | Reserva confirmada: Reserva [R05] Cliente: Laura Martínez | Servicio: Consultoría Arquitectura Cloud (3h) | Estado: CONFIRMADA | Total: $428,400.00
+2026-11-18 22:25:27 | INFO     | Reserva cancelada y recurso liberado: Reserva [R01] Cliente: Laura Martínez | Servicio: Sala de Juntas Ejecutiva (4h) | Estado: CANCELADA | Total: $410,550.00
+2026-11-18 22:25:27 | INFO     | Reserva confirmada: Reserva [R06] Cliente: Carlos Gómez | Servicio: Sala de Juntas Ejecutiva (3h) | Estado: CONFIRMADA | Total: $315,350.00
+2026-11-18 22:25:27 | ERROR    | Error al cancelar reserva: La reserva R01 ya se encuentra cancelada.
